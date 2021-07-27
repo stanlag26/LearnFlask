@@ -1,13 +1,18 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Главная страница
+{{ post.title }}
 {% endblock %}
 
 {% block content_title %}
-<h1>Добро пожаловать на страницу!!!</h1>
+<h1>{{ post.title }}</h1>
 {% endblock %}
 
 {% block content %}
-<h6>Привет мир!!!</h6>
+<p>
+    {{ post.body }}
+</p>
+<p>
+    {{ post.created }}
+</p>
 {% endblock %}
